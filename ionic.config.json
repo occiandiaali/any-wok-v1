@@ -1,0 +1,7 @@
+{
+  "name": "anyWok",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
