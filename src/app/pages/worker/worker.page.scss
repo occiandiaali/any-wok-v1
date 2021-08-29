@@ -1,0 +1,26 @@
+ion-title {
+  font-size: large;
+}
+
+.content-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2em;
+}
+
+#logout-icon {
+  font-size: 1.5em;
+  padding: 1em;
+}
+
+#ava {
+  width: 100px;
+  height: 100px;
+}
+
+#chart {
+  width: 170px;
+  height: 100px;
+}
