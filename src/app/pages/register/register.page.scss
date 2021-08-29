@@ -1,0 +1,50 @@
+#first-item-reg {
+  margin-top: 70px;
+}
+
+#reg-info {
+  color: gray;
+  text-align: center;
+}
+
+#pw-bottom {
+  margin-bottom: 1em;
+}
+
+.divider {
+  display: flex;
+
+  &:before,
+  &:after {
+    content: "";
+    flex: 1;
+  }
+}
+
+.line {
+  align-items: center;
+  margin: 1em -1em;
+  color: #cccccc;
+
+  &:before,
+  &:after {
+    height: 1px;
+    margin: 0 1em;
+  }
+}
+
+.one-line {
+  &:before,
+  &:after {
+    background: #cccccc;
+  }
+}
+
+ion-content {
+  --offset-bottom: auto !important;
+  --overflow: hidden;
+  overflow: auto;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}

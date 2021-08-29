@@ -1,0 +1,102 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>For Workers</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <form>
+    <h2>Sign In</h2>
+    <ion-item lines="full">
+      <ion-label position="floating">email</ion-label>
+      <ion-input
+        type="text"
+        placeholder="you@email.whatever"
+        required
+      ></ion-input>
+    </ion-item>
+    <ion-item lines="full" id="pw-bottom">
+      <ion-label position="floating">password</ion-label>
+      <ion-input type="text" placeholder="your password" required></ion-input>
+    </ion-item>
+    <ion-row>
+      <ion-col>
+        <ion-button
+          type="submit"
+          color="dark"
+          expand="block"
+          [routerLink]="['/login']"
+          >Login</ion-button
+        >
+      </ion-col>
+    </ion-row>
+    <span class="divider line one-line">OR</span>
+    <h2>New User? Join below</h2>
+    <ion-item lines="full" id="first-item-reg">
+      <ion-icon name="person-add-outline" slot="start"></ion-icon>
+      <ion-input type="file" required></ion-input>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label position="floating">first name</ion-label>
+      <ion-input
+        type="text"
+        placeholder="worker first name"
+        required
+      ></ion-input>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label position="floating">last name</ion-label>
+      <ion-input
+        type="text"
+        placeholder="worker last name"
+        required
+      ></ion-input>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label position="floating">email</ion-label>
+      <ion-input type="text" placeholder="worker email" required></ion-input>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label position="floating">phone</ion-label>
+      <ion-input
+        type="phone"
+        placeholder="worker phone number"
+        required
+      ></ion-input>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label>choose location</ion-label>
+      <ion-select value="" okText="Set" cancelText="Cancel">
+        <ion-select-option value="arep-wa-gboro"
+          >Magboro-Wawa</ion-select-option
+        >
+        <ion-select-option value="opic-berger">Opic-Berger</ion-select-option>
+        <ion-select-option value="alau-godo">Alausa-Magodo</ion-select-option>
+        <ion-select-option value="alape-gudu">Alapere-Ogudu</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-row>
+      <ion-col>
+        <ion-button
+          type="submit"
+          color="dark"
+          expand="block"
+          [routerLink]="['/login']"
+          >Register</ion-button
+        >
+      </ion-col>
+    </ion-row>
+    <p id="reg-info">
+      *Location is the worker's choice of places that they prefer to work at..
+    </p>
+  </form>
+</ion-content>
